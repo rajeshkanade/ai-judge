@@ -9,7 +9,6 @@ export default function App() {
   const [verdict, setVerdict] = useState("");
   const [loadingVerdict, setLoadingVerdict] = useState(false);
 
-  // 🔁 Fetch verdict automatically when both lawyers have AI responses
   useEffect(() => {
     const fetchVerdict = async () => {
       if (lawyer1 && lawyer2) {

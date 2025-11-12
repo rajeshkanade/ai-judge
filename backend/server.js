@@ -6,9 +6,6 @@ dotenv.config()
 import mongoose from "mongoose";
 import AIRoutes from "./Routes/AIRoutes.js";
 
-
-
-// connect to MongoDB
 mongoose
     .connect(process.env.MONGO_URI)
     .then(() => console.log("Connected to MongoDB"))
@@ -21,11 +18,9 @@ app.use(express.json());
 const GEMINI_URL =
   "https://generativelanguage.googleapis.com/v1beta1/models/gemini-1.5-flash-latest:generateContent";
 
-// --- API ROUTES ---
-
 app.get("/", (req, res) => res.send("AI Judge Backend Running 🚀"));
 
 app.use("/api", AIRoutes);
-// --- Start Server ---
+
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));

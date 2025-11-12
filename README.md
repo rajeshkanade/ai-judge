@@ -1,4 +1,5 @@
 # ⚖️ AI Judge – Mock Trial Decision System
+Youtube Link : https://youtu.be/qSYBYIGdpIg
 
 ### 🌟 Overview
 AI Judge is an intelligent legal assistant that simulates courtroom decision-making.  
@@ -215,23 +216,6 @@ MAX_FILE_SIZE=10485760
 
 **Issue:** Frontend can't reach backend
 - **Solution:** Ensure backend is running on `http://localhost:5000` and CORS is properly configured
-
----
-
-### 🚀 Deployment
-
-### Frontend Deployment (Vercel/Netlify)
-```bash
-cd frontend
-npm run build
-```
-Deploy the `dist` folder
-
-### Backend Deployment (Heroku/Railway)
-```bash
-# Update .env with production variables
-git push <remote> main
-```
 
 ---
 
